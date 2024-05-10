@@ -1,0 +1,40 @@
+<!-- index.html -->
+{% extends "layouts/master.html" %}
+
+{% block title %}Home - My Website{% endblock %}
+
+{% block content %}
+<!-- simple post form text area -->
+<form action="{{ url_for('test') }}" method="post">
+    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+<div class="res">
+
+</div>
+<!-- simple post form text area -->
+
+<!-- script ajax to send the text asyncly -->
+<script>
+  const form = document.querySelector('form');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const jsonData = {};
+    formData.forEach((value, key) => {
+      jsonData[key] = value;
+    });
+    const response = await fetch('{{ url_for("test") }}', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json' // Set Content-Type header
+      },
+      body: JSON.stringify(jsonData) // Convert form data to JSON
+    });
+    const data = await response.json();
+    document.querySelector('.res').innerHTML = data;
+
+  });
+</script>
+{% endblock %}
