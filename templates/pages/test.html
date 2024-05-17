@@ -5,14 +5,62 @@
 
 {% block content %}
 <!-- simple post form text area -->
-<form action="{{ url_for('test') }}" method="post">
-    <textarea name="content" id="content" cols="30" rows="10"></textarea>
-    <button type="submit">Submit</button>
-</form>
 
-<div class="res">
+<section class="featured-section">
+  <div class="container">
+      <div class="row justify-content-center">
 
-</div>
+          <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+              <div class="custom-block bg-white shadow-lg">
+                      <div class="d-flex">
+                          <div>
+                              <h5 class="mb-2">     Masukkan Bahasa Indonesia</h5>
+
+                          </div>
+
+                          <span class="badge bg-design rounded-pill ms-auto">ID</span>
+                      </div>
+                      <form action="{{ url_for('test') }}" method="post" >
+                        <div class="form-group">
+<h5>                          <textarea class="form-control" name="content" id="content" rows="10"></textarea></h5>
+                        </div>
+                          <button type="submit" class="btn btn-primary mb-3">Translate</button>
+                
+                    </form>
+                
+              </div>
+          </div>
+
+          <div class="col-lg-6 col-12">
+              <div class="custom-block custom-block-overlay">
+                  <div class="d-flex flex-column h-100">
+                      <img src="images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="">
+
+                      <div class="custom-block-overlay-text d-flex">
+                          <div>
+                              <h5 class="text-white mb-5">English Translated</h5>
+
+
+                              <h1 class="text-white mb-2"><div class="res">
+
+                              </div>   </h1>
+                            </div>
+
+                          <span class="badge bg-finance rounded-pill ms-auto">EN</span>
+                      </div>
+
+                    
+
+                      <div class="section-overlay"></div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+
 <!-- simple post form text area -->
 
 <!-- script ajax to send the text asyncly -->
