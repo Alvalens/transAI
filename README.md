@@ -41,7 +41,7 @@ Ensure you have Python version 3.10 and pip installed (windows). If not, you can
    pip install -r requirements.txt
 
    ```
-5. Start the Flask development server
+5. Start the Flask development server, also before running the server train the model first
 
    ```powershell
    py app.py
