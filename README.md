@@ -1,9 +1,11 @@
 
 # TransAI
 
-![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=transAI.visitor-badge)
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=transAI)
 
 Welcome to TransAI, a simple yet powerful translation website that leverages Python, Flask, and TensorFlow to translate text from Indonesian to English using a Transformer algorithm. The model is provided as a Jupyter Notebook which you can experiment and train the model yourself.
+
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## Features
@@ -15,7 +17,7 @@ Welcome to TransAI, a simple yet powerful translation website that leverages Pyt
 
 ## Installation
 
-Ensure you have Python version 3.10 and pip installed (windows). If not, you can install Python from [python.org](https://www.python.org/). Ensure you run
+Ensure you have Python version 3.10 and pip installed (windows). If not, you can install Python from [python.org](https://www.python.org/). 
 
 1. Clone the Repository
 
@@ -32,7 +34,6 @@ Ensure you have Python version 3.10 and pip installed (windows). If not, you can
    ```powershell
    python -m venv venv
    .venv\Scripts\activate
-
    ```
 4. Install Dependency, also ensure you run notebook first cell  at `notebook/transformer_id-en.ipynb`
 
