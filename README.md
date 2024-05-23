@@ -22,7 +22,7 @@ Ensure you have Python version 3.10 and pip installed (windows). If not, you can
 1. Clone the Repository
 
    ```powershell
-   git clone https://github.com/Alvalens/transAI.git
+   git clone "https://github.com/Alvalens/transAI.git"
    ```
 2. Navigate to project directory
 
@@ -53,7 +53,7 @@ Contributions are welcome! If you find any issues or have suggestions, feel free
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Special Thanks
 
